@@ -102,7 +102,7 @@ export default function SetupProfile() {
             {avatars.map((avatar, index) => (
               <img
                 key={index}
-                src={avatar}
+                src={`avatars${avatar}`}
                 alt={`Avatar ${index + 1}`}
                 className={`w-20 h-20 object-cover cursor-pointer ${
                   selectedAvatar === avatar ? 'border-4 border-blue-500' : ''
