@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev-with-emu": "concurrently \"next dev\" \"firebase emulators:start\""
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
+    "firebase": "^10.12.2",
+    "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "postcss": "^8",
